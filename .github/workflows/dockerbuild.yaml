@@ -7,6 +7,6 @@ on:
 
 jobs:
   dockerbuild:
-    uses: prakashecho/docker/.github/workflows/docker.yml@main
+    uses: prakashecho/docker/.github/workflows@main
     with: 
       releaseVersion: '1'
