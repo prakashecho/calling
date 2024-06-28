@@ -1,0 +1,14 @@
+name: docker image build
+
+on:
+  push: [main]
+
+
+jobs:
+  dockerbuil:
+    uses: prakashecho/docker/docker.yaml@main
+    with: 
+      releaseVersion: 1
+
+  
+    
