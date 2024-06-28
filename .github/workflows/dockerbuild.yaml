@@ -11,6 +11,23 @@ permissions:
   statuses: write
 jobs:
   dockerbuild:
-    uses: prakashecho/docker/.github/workflows/docker.yaml@main
-    #with: 
-      #releaseVersion: '1'
+      runs-on: ubuntu-latest
+
+      steps:
+        
+      - name: Install dependencies
+        uses: prakashecho/docker/.github/workflows/dependency.yaml@main
+        #with:
+          #install-all: true  # Example: Install all dependencies
+          # Alternatively, you can specify individual dependencies:
+           # install-curl: true
+           # install-git: true
+           # install-gh: true
+           # install-docker-compose: true   
+         
+      - name: Check versions
+        run: |
+          docker-compose --version
+          curl --version
+          git --version
+          gh --version
