@@ -1,14 +1,12 @@
 name: docker image build
 
 on:
-  push: [main]
-
+  push:
+    branches:
+      - main
 
 jobs:
-  dockerbuil:
-    uses: prakashecho/docker/docker.yaml@main
+  dockerbuild:
+    uses: prakashecho/docker/.github/workflows/docker.yml@main
     with: 
-      releaseVersion: 1
-
-  
-    
+      releaseVersion: '1'
