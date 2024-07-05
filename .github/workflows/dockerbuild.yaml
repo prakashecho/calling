@@ -15,7 +15,8 @@ jobs:
   install-dependencies:
     uses: prakashecho/docker/.github/workflows/docker.yaml@main
     with:
-      install-all: true  # Example: Install all dependencies
+      releaseVersion: '10'
+      # install-all: true  # Example: Install all dependencies
       # Alternatively, you can specify individual dependencies:
       # install-curl: true
       # install-git: true
