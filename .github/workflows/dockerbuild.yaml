@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   install-dependencies:
-    uses: prakashecho/docker/.github/workflows/dependency.yaml@main
+    uses: prakashecho/docker/.github/workflows/docker.yaml@main
     with:
       install-all: true  # Example: Install all dependencies
       # Alternatively, you can specify individual dependencies:
