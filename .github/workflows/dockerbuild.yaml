@@ -31,9 +31,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Check versions
-        run: |
-          docker-compose --version || echo "docker-compose not installed"
-          curl --version || echo "curl not installed"
-          git --version || echo "git not installed"
-          gh --version || echo "GitHub CLI not installed"
+      # - name: Check versions
+      #   run: |
+      #     docker-compose --version || echo "docker-compose not installed"
+      #     curl --version || echo "curl not installed"
+      #     git --version || echo "git not installed"
+      #     gh --version || echo "GitHub CLI not installed"
